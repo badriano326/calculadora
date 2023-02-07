@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="PT - BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calculadora</title>
+ <!--folha de estilo-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="fundo">
+  <div class="saida">
+    <input type="text" id="resultado" placeholder="0" >
+  </div>
+  <div class="btns">
+    <button type="button" class="btn1" onclick="numeros(7)">7</button>
+    <button type="button" class="btn1" onclick="numeros(8)">8</button>
+    <button type="button" class="btn1" onclick="numeros(9)">9</button>
+    <button type="button" class="btn1" onclick="numeros('/')">÷</button>
+  </div>
+  <div class="btns">
+    <button type="button" class="btn1" onclick="numeros(4)">4</button>
+    <button type="button" class="btn1" onclick="numeros(5)">5</button>
+    <button type="button" class="btn1" onclick="numeros(6)">6</button>
+    <button type="button" class="btn1" onclick="numeros('*')">×</button>
+  </div>
+  <div class="btns">
+    <button type="button" class="btn1" onclick="numeros(1)">1</button>
+    <button type="button" class="btn1" onclick="numeros(2)">2</button>
+    <button type="button" class="btn1" onclick="numeros(3)">3</button>
+    <button type="button" class="btn1" onclick="numeros('+')">+</button>
+  </div>
+  <div class="btns">
+    <button type="button" class="btn1" onclick="resetar()">AC</button>
+    <button type="button" class="btn1" onclick="numeros(0)">0</button>
+    <button type="button" class="btn1" onclick="numeros('.')">.</button>
+    <button type="button" class="btn1" onclick="numeros('-')">-</button>
+  </div>
+  <div class="btns2">
+    <button class="btn1" onclick="numeros('>')">></button>
+    <button class="btn1" onclick="numeros('<')"><</button>
+    <button class="btn2" onclick="operacao()">=</button>
+  </div>
+  
+  </div>
+  <!-- Script -->
+  <script src="main.js"></script>
+</body>
+</html>
